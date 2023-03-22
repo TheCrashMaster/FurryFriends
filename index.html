@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Furry Friends' Guide</title>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <h1 class="logo">Furry<span>Friends</span></h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">MAIN</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#contacts">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="big-rect">
+    
+
+
+
+    <div class="main-body">
+      <div class="left-m">
+        <h1 class="main-w">
+          Welcome to Furry Friends' Guide !
+        </h1>
+        <p class="main-p">
+          Your go-to resource for everything related to dog care and maintenance. We understand that your furry friend is an important member of your family, and we're here to help you provide the best possible care for them.
+          Whether you're a new dog owner or a seasoned pet parent, we have the advice, tips, and information you need to ensure your dog is healthy, happy, and well-cared for. From nutrition and grooming to exercise and training, our experts have you covered.
+          Our mission is to provide you with accurate, up-to-date information so you can make informed decisions about your dog's care. We believe that every dog deserves a loving home and quality care, and we're here to help you achieve that.
+          So take a look around our site and discover all the resources we have to offer. From our comprehensive articles and expert interviews to our community forums and product reviews, we're here to support you and your furry friend every step of the way.
+          Thank you for choosing Furry Friends' Guide as your trusted source for dog care and maintenance. We look forward to helping you provide the best possible care for your four-legged friend.
+        </p>
+      </div>
+      <div class="right-m">
+        <div class="im1">
+          <img src="images/dog2.png" width="650px" alt="main-image">
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="about">
+      <div class="sov-body" id="sov">
+        <div class="left1">
+          <div class="im1">
+            <img src="images/Dog1.png" width="650px" alt="main-image">
+          </div>
+        </div>
+    
+    
+        <div class="right2">
+          <h1 class="main-w">
+            Nutrition
+          </h1>
+          <p class="main-p">
+            Feeding your dog a balanced and nutritious diet is essential for their overall health and well-being.
+            At Furry Friends' Guide, we understand that choosing the right food for your dog can be overwhelming, with so many options available in the market. That's why we've put together a comprehensive guide to help you make informed decisions about your dog's diet.
+            First and foremost, it's important to choose a high-quality dog food that is specifically formulated for your dog's age, breed, size, and activity level. Look for dog food that contains a balanced mix of protein, fats, and carbohydrates, as well as essential vitamins and minerals.
+            You should also consider your dog's specific dietary needs. For example, dogs with food allergies or sensitivities may require a specialized diet. And if your dog has a medical condition, such as diabetes or kidney disease, they may require a prescription diet.
+            In addition to choosing the right food, it's also important to feed your dog the appropriate portion sizes and to provide them with fresh water at all times. And remember, treats should only make up a small part of your dog's diet and should be given in moderation.
+            By providing your dog with a nutritious and balanced diet, you can help them maintain a healthy weight, reduce the risk of health problems, and keep them happy and energetic. Stay tuned for more tips and advice on dog care from Furry Friends' Guide.
+          </p>
+        </div>
+    </div>
+  
+      
+    </div>
+  
+  
+    <div id="contacts">
+      <div class="cont-block">
+        <div class="pics">
+          <img src="images/dogy2.png" alt="" width="350px">
+          <img src="images/dog2.png" alt="" width="350px" class="center-img" >
+          <img src="images/Dog1.png" alt="" width="350px">
+          <h2>Contact to developer</h2>
+        </div>
+        
+        <div class="cont-form">
+          <div class="left-form">
+            <p class="mail-p">eliseevcomp@gmail.com</p>
+            <p class="inst-p"><a href="https://www.instagram.com/invites/contact/?i=1vlccu40x5s5v&utm_content=2ovzgtj">eliseevinthemix</a></p>
+            <a href="images/cv.doc" download="" class="btn-1 cv-btn2">DOWNLOAD_CV</a>
+          </div>
+          <div class="right-form">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your email" required>
+              <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn-1 sub-btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  <div class="copyright">
+    <p>Copyright © Elisey. Made in 2023rd.</p>
+  </div>
+  
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxoVzGf8WfD-9kHynBeCOORbWi5B7tSLZDwvozxCcMyghSQLhZXNINOsDRDzvODLNX/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+      
+  
+</body>
+</html>
