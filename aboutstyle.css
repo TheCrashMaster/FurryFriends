@@ -102,6 +102,16 @@ nav ul li a:hover:before {
   font-size: 3.2rem;
 }
 
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: rgb(196, 222, 157);;
+  font-weight: 200;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
 
 
 
