@@ -316,5 +316,44 @@ h2 {
 
 
 
+@media only screen and (max-width: 600px){
+  header {
+    width: 1%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+  }
+  .im1 {
+    width: 100%;
+  }
+  
+  .left-m{
+    width: 40%;
+    
+    background: grey;
+  }
+  /*   
+    
+   
+    
+    background: grey; */
+  /* }
+  nav {
+    margin: 1em;
+    
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.4em;
+    margin: 0;
+  }
+
+  .big-rect {
+    width: 400px;
+  } */
+ 
+}
 
