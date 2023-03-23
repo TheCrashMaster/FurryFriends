@@ -144,7 +144,7 @@ nav ul li a:before {
   
 }
 
-.im1 {
+.main-img {
   border-radius: 15%;
   background-size: 100%;
   transition: background-size 800ms;
@@ -315,17 +315,34 @@ h2 {
 
 
 @media only screen and (max-width: 600px){
+.big-rect {
+  max-width: 600px;
+  margin: 0 auto;
+  
+  /* padding-left: 3%;
+  padding-right: 3%; */
+  /* background: rgb(211, 109, 109); */
+}
+
   .main-body {
-    display: block;
+    display:block;
   }
   
-  .sov-body {
-    display: block;
+  /* .sov-body {
+    display:inline;
   }
   
   .cont-form {
-    display: block;
+    display: inline;
+  } */
+  
+  .main-img {
+    width: 50px;
   }
+  
+  
+  
+  
  
 }
 
