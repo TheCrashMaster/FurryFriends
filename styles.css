@@ -91,14 +91,12 @@ nav ul li a:before {
 }
 
 .left-m {
-  width: 45%; 
+  flex-grow: 1;
   margin-top: 6.5em;
-  
-  
 }
 .right-m {
-  flex-grow: 1; 
-   
+  width: 45%;
+  margin-top: 6.5em;
 }
 
 .main-w {
@@ -166,7 +164,7 @@ nav ul li a:before {
 }
 .right1 {
   width: 45%;
-  
+  margin-top: 6.5em;
   
 }
 .right2 {
@@ -317,43 +315,17 @@ h2 {
 
 
 @media only screen and (max-width: 600px){
-  header {
-    width: 1%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
-  .im1 {
-    width: 100%;
+  .main-body {
+    display: block;
   }
   
-  .left-m{
-    width: 40%;
-    
-    /* background: grey; */
+  .sov-body {
+    display: block;
   }
-  /*   
-    
-   
-    
-    background: grey; */
-  /* }
-  nav {
-    margin: 1em;
-    
+  
+  .cont-form {
+    display: block;
   }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1.4em;
-    margin: 0;
-  }
-
-  .big-rect {
-    width: 400px;
-  } */
  
 }
 
